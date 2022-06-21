@@ -1,0 +1,28 @@
+name: rx_permissions
+description: >-
+  This package provides a reactive cross-platform (iOS, Android) API
+  to request and check permissions for the [permission_handler](https://pub.dev/packages/permission_handler) package.
+version: 1.0.0
+homepage: https://github.com/mi-sch-ka
+repository: https://github.com/mi-sch-ka/rx-permissions
+issue_tracker: https://github.com/mi-sch-ka/rx-permissions/issues
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # reactive programming: additional capabilities to dart streams and stream-controllers.
+  rxdart: ^0.27.3
+  # permission handler
+  permission_handler: ^9.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.6.0
+
+flutter:
+  uses-material-design: false
