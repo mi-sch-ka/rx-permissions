@@ -4,17 +4,20 @@ import 'package:rx_permissions/src/rx_permissions_interface.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:rxdart/rxdart.dart';
 
-class RxPermissions extends RxPermissionsInterface{
+class RxPermissions extends RxPermissionsInterface {
   // Contains all the current permission requests.
   // Once granted or denied, they are removed from it.
-  final Map<Permission,Subject<Permission>> requestStorage = {};
-  final BehaviorSubject<List<Permission>> permissionsOfInterestSubject = BehaviorSubject<List<Permission>>();
+  final Map<Permission, Subject<Permission>> requestStorage = {};
+  final BehaviorSubject<List<Permission>> permissionsOfInterestSubject =
+      BehaviorSubject<List<Permission>>();
 
   @override
-  List<Permission> get permissionsOfInterest => permissionsOfInterestSubject.value;
+  List<Permission> get permissionsOfInterest =>
+      permissionsOfInterestSubject.value;
 
   @override
-  Stream<List<Permission>> get permissionsOfInterestObservable => permissionsOfInterestSubject.asBroadcastStream();
+  Stream<List<Permission>> get permissionsOfInterestObservable =>
+      permissionsOfInterestSubject.asBroadcastStream();
 
   @override
   Future<bool> granted(List<Permission> permission) => permission.granted();
@@ -27,10 +30,11 @@ class RxPermissions extends RxPermissionsInterface{
     final subjects = permissions.map((it) => _requireSubject(it));
     return Rx.combineLatest(
       subjects,
-          (List<Permission> value) {
+      (List<Permission> value) {
         return <Permission>[].also((it) => it.addAll(value));
       },
-    ).doOnListen(() => permissionsOfInterestSubject.add(requestStorage.keys.toList()));
+    ).doOnListen(
+        () => permissionsOfInterestSubject.add(requestStorage.keys.toList()));
   }
 
   @override
