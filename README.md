@@ -1,4 +1,7 @@
 # rx-permissions
+
+[![Pub](https://img.shields.io/pub/v/rx_permissions.svg)](https://pub.dartlang.org/packages/rx_permissions)
+
 This package provides a reactive cross-platform (iOS, Android) API 
 to request and check permissions for the [permission_handler](https://pub.dev/packages/permission_handler) package.
 
@@ -35,7 +38,7 @@ Once you have received the stream, you can observe it as usual and react to chan
  }
 ```
 
-Call the method `request()` to request the required permissions
+Call the `request()`-method to request the required permissions
 
 ```dart
   rx_permissions.request(requiredPermission);
