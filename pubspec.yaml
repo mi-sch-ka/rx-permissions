@@ -2,7 +2,7 @@ name: rx_permissions
 description: >-
   This package provides a reactive cross-platform (iOS, Android) API
   to request and check permissions for the permission_handler package.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/mi-sch-ka
 repository: https://github.com/mi-sch-ka/rx-permissions
 issue_tracker: https://github.com/mi-sch-ka/rx-permissions/issues
