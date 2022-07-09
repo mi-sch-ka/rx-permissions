@@ -1,4 +1,4 @@
-<img src="https://github.com/mi-sch-ka/rx-permissions/blob/main/.github/thumbnail.png"/>
+<img src="https://raw.githubusercontent.com/mi-sch-ka/rx-permissions/main/.github/thumbnail.png"/>
 
 [![Pub](https://img.shields.io/pub/v/rx_permissions.svg)](https://pub.dartlang.org/packages/rx_permissions)
 

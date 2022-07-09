@@ -1,3 +1,7 @@
+## [1.0.3] 10.07.2022
+
+* update documentation
+
 ## [1.0.2] 10.07.2022
 
 * update documentation
