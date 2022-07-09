@@ -1,4 +1,4 @@
-# rx-permissions
+<img src=".github/thumbnail.png"/>
 
 [![Pub](https://img.shields.io/pub/v/rx_permissions.svg)](https://pub.dartlang.org/packages/rx_permissions)
 
