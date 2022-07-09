@@ -17,7 +17,7 @@ dependencies:
   # reactive programming: additional capabilities to dart streams and stream-controllers.
   rxdart: ^0.27.3
   # permission handler
-  permission_handler: ^9.2.0
+  permission_handler: ^10.0.0
 
 dev_dependencies:
   flutter_test:
