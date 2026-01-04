@@ -1,3 +1,7 @@
+## [1.3.0] 04.01.2026
+
+* Updates dependencies to latest versions.
+
 ## [1.2.0] 17.03.2025
 
 * update permission handler dependency to 11.4.0
